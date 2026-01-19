@@ -1,0 +1,368 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BD20C0-E453-4134-C5D2-E6ABEF569A37}|EMS.MicroService\\EMS.MicroService.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.microservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BD20C0-E453-4134-C5D2-E6ABEF569A37}|EMS.MicroService\\EMS.MicroService.csproj|solutionrelative:ems.microservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68961994-8760-E338-8AFA-D21CE8793432}|EMS.Infrastructure\\EMS.Infrastructure.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68961994-8760-E338-8AFA-D21CE8793432}|EMS.Infrastructure\\EMS.Infrastructure.csproj|solutionrelative:ems.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68961994-8760-E338-8AFA-D21CE8793432}|EMS.Infrastructure\\EMS.Infrastructure.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68961994-8760-E338-8AFA-D21CE8793432}|EMS.Infrastructure\\EMS.Infrastructure.csproj|solutionrelative:ems.infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29DF4EC7-EAA5-DA1B-7008-F3B0B2C982F2}|EMS.Logic\\EMS.Logic.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.logic\\repository\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29DF4EC7-EAA5-DA1B-7008-F3B0B2C982F2}|EMS.Logic\\EMS.Logic.csproj|solutionrelative:ems.logic\\repository\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B113706-772F-0013-AC26-8C2E7A3AE5EA}|EMS.Application\\EMS.Application.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.application\\applicationassemblymarker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B113706-772F-0013-AC26-8C2E7A3AE5EA}|EMS.Application\\EMS.Application.csproj|solutionrelative:ems.application\\applicationassemblymarker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09948102-941C-3597-C986-F9718DADFEFE}|EMS.Domain\\EMS.Domain.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09948102-941C-3597-C986-F9718DADFEFE}|EMS.Domain\\EMS.Domain.csproj|solutionrelative:ems.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B113706-772F-0013-AC26-8C2E7A3AE5EA}|EMS.Application\\EMS.Application.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.application\\handler\\auth\\registerusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B113706-772F-0013-AC26-8C2E7A3AE5EA}|EMS.Application\\EMS.Application.csproj|solutionrelative:ems.application\\handler\\auth\\registerusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B113706-772F-0013-AC26-8C2E7A3AE5EA}|EMS.Application\\EMS.Application.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.application\\command\\auth\\registerusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B113706-772F-0013-AC26-8C2E7A3AE5EA}|EMS.Application\\EMS.Application.csproj|solutionrelative:ems.application\\command\\auth\\registerusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B113706-772F-0013-AC26-8C2E7A3AE5EA}|EMS.Application\\EMS.Application.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.application\\handler\\auth\\refreshtokencommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B113706-772F-0013-AC26-8C2E7A3AE5EA}|EMS.Application\\EMS.Application.csproj|solutionrelative:ems.application\\handler\\auth\\refreshtokencommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29DF4EC7-EAA5-DA1B-7008-F3B0B2C982F2}|EMS.Logic\\EMS.Logic.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.logic\\repository\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29DF4EC7-EAA5-DA1B-7008-F3B0B2C982F2}|EMS.Logic\\EMS.Logic.csproj|solutionrelative:ems.logic\\repository\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B113706-772F-0013-AC26-8C2E7A3AE5EA}|EMS.Application\\EMS.Application.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.application\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B113706-772F-0013-AC26-8C2E7A3AE5EA}|EMS.Application\\EMS.Application.csproj|solutionrelative:ems.application\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B113706-772F-0013-AC26-8C2E7A3AE5EA}|EMS.Application\\EMS.Application.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.application\\handler\\auth\\logincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B113706-772F-0013-AC26-8C2E7A3AE5EA}|EMS.Application\\EMS.Application.csproj|solutionrelative:ems.application\\handler\\auth\\logincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B113706-772F-0013-AC26-8C2E7A3AE5EA}|EMS.Application\\EMS.Application.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.application\\repository\\ijwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B113706-772F-0013-AC26-8C2E7A3AE5EA}|EMS.Application\\EMS.Application.csproj|solutionrelative:ems.application\\repository\\ijwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BD20C0-E453-4134-C5D2-E6ABEF569A37}|EMS.MicroService\\EMS.MicroService.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.microservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BD20C0-E453-4134-C5D2-E6ABEF569A37}|EMS.MicroService\\EMS.MicroService.csproj|solutionrelative:ems.microservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B113706-772F-0013-AC26-8C2E7A3AE5EA}|EMS.Application\\EMS.Application.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.application\\command\\auth\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B113706-772F-0013-AC26-8C2E7A3AE5EA}|EMS.Application\\EMS.Application.csproj|solutionrelative:ems.application\\command\\auth\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09948102-941C-3597-C986-F9718DADFEFE}|EMS.Domain\\EMS.Domain.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.domain\\entities\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09948102-941C-3597-C986-F9718DADFEFE}|EMS.Domain\\EMS.Domain.csproj|solutionrelative:ems.domain\\entities\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68961994-8760-E338-8AFA-D21CE8793432}|EMS.Infrastructure\\EMS.Infrastructure.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.infrastructure\\persistence\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68961994-8760-E338-8AFA-D21CE8793432}|EMS.Infrastructure\\EMS.Infrastructure.csproj|solutionrelative:ems.infrastructure\\persistence\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68961994-8760-E338-8AFA-D21CE8793432}|EMS.Infrastructure\\EMS.Infrastructure.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.infrastructure\\persistence\\configurations\\refreshtokenconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68961994-8760-E338-8AFA-D21CE8793432}|EMS.Infrastructure\\EMS.Infrastructure.csproj|solutionrelative:ems.infrastructure\\persistence\\configurations\\refreshtokenconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BD20C0-E453-4134-C5D2-E6ABEF569A37}|EMS.MicroService\\EMS.MicroService.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.microservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C5BD20C0-E453-4134-C5D2-E6ABEF569A37}|EMS.MicroService\\EMS.MicroService.csproj|solutionrelative:ems.microservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09948102-941C-3597-C986-F9718DADFEFE}|EMS.Domain\\EMS.Domain.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.domain\\entities\\common\\auditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09948102-941C-3597-C986-F9718DADFEFE}|EMS.Domain\\EMS.Domain.csproj|solutionrelative:ems.domain\\entities\\common\\auditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09948102-941C-3597-C986-F9718DADFEFE}|EMS.Domain\\EMS.Domain.csproj|f:\\development\\dotnet\\employee-management-system\\emsapplication\\ems.domain\\ems.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{09948102-941C-3597-C986-F9718DADFEFE}|EMS.Domain\\EMS.Domain.csproj|solutionrelative:ems.domain\\ems.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "EMS.Domain\\Entities\\User.cs",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "EMS.Domain\\Entities\\User.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAowBAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T14:08:05.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.MicroService\\Program.cs",
+              "RelativeDocumentMoniker": "EMS.MicroService\\Program.cs",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.MicroService\\Program.cs",
+              "RelativeToolTip": "EMS.MicroService\\Program.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T14:49:32.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "EMS.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "EMS.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAwwCUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T14:54:58.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Logic\\Repository\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "EMS.Logic\\Repository\\PasswordHasher.cs",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Logic\\Repository\\PasswordHasher.cs",
+              "RelativeToolTip": "EMS.Logic\\Repository\\PasswordHasher.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T17:23:24.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Infrastructure\\Persistence\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "EMS.Infrastructure\\Persistence\\AppDbContext.cs",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Infrastructure\\Persistence\\AppDbContext.cs",
+              "RelativeToolTip": "EMS.Infrastructure\\Persistence\\AppDbContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T14:20:29.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationAssemblyMarker.cs",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Application\\ApplicationAssemblyMarker.cs",
+              "RelativeDocumentMoniker": "EMS.Application\\ApplicationAssemblyMarker.cs",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Application\\ApplicationAssemblyMarker.cs",
+              "RelativeToolTip": "EMS.Application\\ApplicationAssemblyMarker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T17:35:15.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "JwtTokenGenerator.cs",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Logic\\Repository\\JwtTokenGenerator.cs",
+              "RelativeDocumentMoniker": "EMS.Logic\\Repository\\JwtTokenGenerator.cs",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Logic\\Repository\\JwtTokenGenerator.cs",
+              "RelativeToolTip": "EMS.Logic\\Repository\\JwtTokenGenerator.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvxwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T17:02:48.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RegisterUserCommand.cs",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Application\\Command\\Auth\\RegisterUserCommand.cs",
+              "RelativeDocumentMoniker": "EMS.Application\\Command\\Auth\\RegisterUserCommand.cs",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Application\\Command\\Auth\\RegisterUserCommand.cs",
+              "RelativeToolTip": "EMS.Application\\Command\\Auth\\RegisterUserCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T17:24:28.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegisterUserCommandHandler.cs",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Application\\Handler\\Auth\\RegisterUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "EMS.Application\\Handler\\Auth\\RegisterUserCommandHandler.cs",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Application\\Handler\\Auth\\RegisterUserCommandHandler.cs",
+              "RelativeToolTip": "EMS.Application\\Handler\\Auth\\RegisterUserCommandHandler.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAD4vxsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T17:12:57.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RefreshTokenCommandHandler.cs",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Application\\Handler\\Auth\\RefreshTokenCommandHandler.cs",
+              "RelativeDocumentMoniker": "EMS.Application\\Handler\\Auth\\RefreshTokenCommandHandler.cs",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Application\\Handler\\Auth\\RefreshTokenCommandHandler.cs",
+              "RelativeToolTip": "EMS.Application\\Handler\\Auth\\RefreshTokenCommandHandler.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA0AAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T17:06:28.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Application\\Repository\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "EMS.Application\\Repository\\IUserRepository.cs",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Application\\Repository\\IUserRepository.cs",
+              "RelativeToolTip": "EMS.Application\\Repository\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T17:07:02.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginCommandHandler.cs",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Application\\Handler\\Auth\\LoginCommandHandler.cs",
+              "RelativeDocumentMoniker": "EMS.Application\\Handler\\Auth\\LoginCommandHandler.cs",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Application\\Handler\\Auth\\LoginCommandHandler.cs",
+              "RelativeToolTip": "EMS.Application\\Handler\\Auth\\LoginCommandHandler.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAowFwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T17:00:40.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IJwtTokenGenerator.cs",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Application\\Repository\\IJwtTokenGenerator.cs",
+              "RelativeDocumentMoniker": "EMS.Application\\Repository\\IJwtTokenGenerator.cs",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Application\\Repository\\IJwtTokenGenerator.cs",
+              "RelativeToolTip": "EMS.Application\\Repository\\IJwtTokenGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T17:02:39.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.MicroService\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "EMS.MicroService\\Controllers\\AuthController.cs",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.MicroService\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "EMS.MicroService\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T16:46:34.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginCommand.cs",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Application\\Command\\Auth\\LoginCommand.cs",
+              "RelativeDocumentMoniker": "EMS.Application\\Command\\Auth\\LoginCommand.cs",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Application\\Command\\Auth\\LoginCommand.cs",
+              "RelativeToolTip": "EMS.Application\\Command\\Auth\\LoginCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T17:00:32.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RefreshToken.cs",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Domain\\Entities\\RefreshToken.cs",
+              "RelativeDocumentMoniker": "EMS.Domain\\Entities\\RefreshToken.cs",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Domain\\Entities\\RefreshToken.cs",
+              "RelativeToolTip": "EMS.Domain\\Entities\\RefreshToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T16:44:32.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Infrastructure\\Persistence\\Configurations\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "EMS.Infrastructure\\Persistence\\Configurations\\UserConfiguration.cs",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Infrastructure\\Persistence\\Configurations\\UserConfiguration.cs",
+              "RelativeToolTip": "EMS.Infrastructure\\Persistence\\Configurations\\UserConfiguration.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T16:35:12.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RefreshTokenConfiguration.cs",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Infrastructure\\Persistence\\Configurations\\RefreshTokenConfiguration.cs",
+              "RelativeDocumentMoniker": "EMS.Infrastructure\\Persistence\\Configurations\\RefreshTokenConfiguration.cs",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Infrastructure\\Persistence\\Configurations\\RefreshTokenConfiguration.cs",
+              "RelativeToolTip": "EMS.Infrastructure\\Persistence\\Configurations\\RefreshTokenConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T16:39:09.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.MicroService\\appsettings.json",
+              "RelativeDocumentMoniker": "EMS.MicroService\\appsettings.json",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.MicroService\\appsettings.json",
+              "RelativeToolTip": "EMS.MicroService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-19T14:24:39.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AuditableEntity.cs",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Domain\\Entities\\Common\\AuditableEntity.cs",
+              "RelativeDocumentMoniker": "EMS.Domain\\Entities\\Common\\AuditableEntity.cs",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Domain\\Entities\\Common\\AuditableEntity.cs",
+              "RelativeToolTip": "EMS.Domain\\Entities\\Common\\AuditableEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T14:11:14.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EMS.Domain.csproj",
+              "DocumentMoniker": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Domain\\EMS.Domain.csproj",
+              "RelativeDocumentMoniker": "EMS.Domain\\EMS.Domain.csproj",
+              "ToolTip": "F:\\Development\\DotNet\\Employee-Management-System\\EMSApplication\\EMS.Domain\\EMS.Domain.csproj",
+              "RelativeToolTip": "EMS.Domain\\EMS.Domain.csproj",
+              "ViewState": "AgIAAAUAAABAq0ZK0ykawAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-19T14:03:45.332Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "EMS.Domain": {
+      "commandName": "Project"
+    },
+    "Profile 1": {
+      "commandName": "Project",
+      "remoteDebugEnabled": false
+    },
+    "Profile 2": {
+      "commandName": "Project"
+    }
+  }
+}

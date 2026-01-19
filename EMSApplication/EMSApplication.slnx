@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/Backend/">
+    <Project Path="EMS.Application/EMS.Application.csproj" />
+    <Project Path="EMS.Domain/EMS.Domain.csproj" />
+    <Project Path="EMS.Infrastructure/EMS.Infrastructure.csproj" />
+    <Project Path="EMS.Logic/EMS.Logic.csproj" />
+    <Project Path="EMS.MicroService/EMS.MicroService.csproj" />
+  </Folder>
+  <Folder Name="/UI/">
+    <Project Path="EMS.UI/ems.ui.esproj">
+      <Build />
+      <Deploy Solution="Release|*" />
+    </Project>
+  </Folder>
+</Solution>
