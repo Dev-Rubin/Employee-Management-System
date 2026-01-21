@@ -1,12 +1,12 @@
 ﻿using EMS.Application.Command.Auth;
-using EMS.Application.Repository;
+using EMS.Application.IRepository;
 using EMS.Domain.Entities;
 using MediatR;
 
 namespace EMS.Application.Handler.Auth
 {
     public class RegisterUserCommandHandler
-        : IRequestHandler<RegisterUserCommand, Guid>
+        : IRequestHandler<RegisterUserCommand, int>
     {
         private readonly IUserRepository _repo;
         private readonly IPasswordHasher _hasher;
@@ -19,7 +19,7 @@ namespace EMS.Application.Handler.Auth
             _hasher = hasher;
         }
 
-        public async Task<Guid> Handle(
+        public async Task<int> Handle(
             RegisterUserCommand request,
             CancellationToken cancellationToken)
         {

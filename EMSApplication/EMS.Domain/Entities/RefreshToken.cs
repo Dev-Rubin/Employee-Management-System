@@ -2,7 +2,7 @@
 
 namespace EMS.Domain.Entities
 {
-    public class RefreshToken : AuditableEntity
+    public class RefreshToken : BaseEntity<int>
     {
         public string Token { get; private set; } = default!;
         public int UserId { get; private set; }
@@ -22,7 +22,6 @@ namespace EMS.Domain.Entities
         public void Revoke(string? modifiedBy = null)
         {
             IsRevoked = true;
-            UpdateAudit(modifiedBy);
         }
 
         public bool IsValid()

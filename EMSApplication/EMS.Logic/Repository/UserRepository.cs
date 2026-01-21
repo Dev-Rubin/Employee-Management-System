@@ -1,4 +1,4 @@
-﻿using EMS.Application.Repository;
+﻿using EMS.Application.IRepository;
 using EMS.Domain.Entities;
 using EMS.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;

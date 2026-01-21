@@ -8,11 +8,14 @@
 
   <ItemGroup>
     <Folder Include="Features\" />
+    <Folder Include="Queryables\" />
     <Folder Include="Query\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MediatR" Version="14.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.2" />
   </ItemGroup>
 
   <ItemGroup>

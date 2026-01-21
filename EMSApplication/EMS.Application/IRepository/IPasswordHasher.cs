@@ -1,4 +1,4 @@
-﻿namespace EMS.Application.Repository
+﻿namespace EMS.Application.IRepository
 {
     public interface IPasswordHasher
     {

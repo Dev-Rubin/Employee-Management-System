@@ -1,4 +1,4 @@
-﻿using EMS.Application.Repository;
+﻿using EMS.Application.IRepository;
 using System.Security.Cryptography;
 using System.Text;
 

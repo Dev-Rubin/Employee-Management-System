@@ -1,5 +1,5 @@
 ﻿using EMS.Application.Command.Auth;
-using EMS.Application.Repository;
+using EMS.Application.IRepository;
 using EMS.Application.Response;
 using MediatR;
 

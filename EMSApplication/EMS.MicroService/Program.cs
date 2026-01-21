@@ -1,4 +1,6 @@
 ﻿using EMS.Infrastructure;
+using EMS.Application;
+using EMS.Logic;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -10,7 +12,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Controllers
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
-builder.Services.RegisterHandler(builder.Configuration);
+builder.Services.AddEmsLogic(builder.Configuration);
+builder.Services.AddApplication(builder.Configuration);
+builder.Services.AddInfrastructure(builder.Configuration);
 
 
 // 🔹 Authentication (JWT)
@@ -49,16 +53,15 @@ var app = builder.Build();
 
 #region Middleware pipeline
 
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
 
+app.MapOpenApi();
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.UseSwagger();
+app.UseSwaggerUI();
 app.MapControllers();
 
 #endregion

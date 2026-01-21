@@ -3,7 +3,7 @@ using EMS.Domain.Entities.Enums;
 
 namespace EMS.Domain.Entities
 {
-    public class User : AuditableEntity
+    public class User : BaseEntity<int>
     {
         public string UserName { get; private set; } = default!;
         public string Email { get; private set; } = default!;
@@ -32,7 +32,6 @@ namespace EMS.Domain.Entities
         public void Deactivate(string? modifiedBy = null)
         {
             IsActive = false;
-            UpdateAudit(modifiedBy);
         }
     }
 

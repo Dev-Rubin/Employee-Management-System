@@ -1,35 +1,35 @@
-﻿namespace EMS.Domain.Entities.Common
+﻿using EMS.Domain.Common.Attributes;
+using EMS.Domain.Entities.Common.Interface;
+using System.Diagnostics;
+using System.Diagnostics.Contracts;
+
+namespace EMS.Domain.Entities.Common
 {
-    public abstract class BaseEntity
+    public abstract class BaseEntity<TIdentity> : IBaseEntity<TIdentity>
     {
-        public Guid Id { get; protected set; }
+        public virtual TIdentity Id { get; protected set; }
+        public virtual int? AddedByUserId { get; set; }
+        public virtual DateTime? AddedDate { get; set; } = DateTime.Now;
+        public virtual int? UpdatedByUserId { get; set; }
+        public virtual DateTime? UpdatedDate { get; set; }
+        private readonly List<ILegacyEvent> _events = new List<ILegacyEvent>();
 
-        public DateTime CreatedAt { get; protected set; } = DateTime.Now;
-        public string? CreatedBy { get; protected set; }
-
-        public DateTime? ModifiedAt { get; protected set; }
-        public string? ModifiedBy { get; protected set; }
-
-        public bool IsActive { get; protected set; }
-
-        protected BaseEntity()
+        [Pure]
+        [DebuggerNonUserCode]
+        public virtual bool IsTransient()
         {
-            Id = Guid.NewGuid();
-            CreatedAt = DateTime.UtcNow;
-            IsActive = false;
+            return Equals(Id, default(TIdentity));
         }
 
-        public void MarkAsDeleted(string? deletedBy = null)
+        [Transient]
+        public virtual IReadOnlyList<ILegacyEvent> Events
         {
-            IsActive = true;
-            ModifiedAt = DateTime.UtcNow;
-            ModifiedBy = deletedBy;
+            get { return _events; }
         }
 
-        public void UpdateAudit(string? modifiedBy = null)
+        public virtual void ResetEvents()
         {
-            ModifiedAt = DateTime.UtcNow;
-            ModifiedBy = modifiedBy;
+            _events.Clear();
         }
     }
 

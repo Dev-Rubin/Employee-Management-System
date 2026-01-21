@@ -1,6 +1,6 @@
 ﻿using EMS.Domain.Entities;
 
-namespace EMS.Application.Repository
+namespace EMS.Application.IRepository
 {
     public interface IJwtTokenGenerator
     {

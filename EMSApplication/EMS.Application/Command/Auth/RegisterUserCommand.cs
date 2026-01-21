@@ -4,5 +4,5 @@ using MediatR;
 
 namespace EMS.Application.Command.Auth
 {
-    public record RegisterUserCommand(string UserName, string Email, string Password, UserRole userRole = UserRole.User) : IRequest<Guid>;
+    public record RegisterUserCommand(string UserName, string Email, string Password, UserRole userRole = UserRole.User) : IRequest<int>;
 }
