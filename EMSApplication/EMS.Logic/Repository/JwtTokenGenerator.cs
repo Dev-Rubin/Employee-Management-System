@@ -1,5 +1,6 @@
 ﻿using EMS.Application.IRepository;
 using EMS.Domain.Entities;
+using EMS.Infrastructure.Persistence.Service;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -9,7 +10,7 @@ namespace EMS.Logic.Repository
 {
 
 
-    public class JwtTokenGenerator : IJwtTokenGenerator
+    public class JwtTokenGenerator : BasicCrudService<User, int>, IJwtTokenGenerator
     {
         private readonly IConfiguration _config;
 

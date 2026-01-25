@@ -1,10 +1,12 @@
 ﻿using EMS.Application.IRepository;
+using EMS.Domain.Entities;
+using EMS.Infrastructure.Persistence.Service;
 using System.Security.Cryptography;
 using System.Text;
 
 namespace EMS.Logic.Repository
 {
-    public class PasswordHasher : IPasswordHasher
+    public class PasswordHasher : BasicCrudService<User, int>, IPasswordHasher
     {
         public bool Verify(string password, string hash, string salt)
         {

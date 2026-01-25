@@ -11,11 +11,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Controllers
 builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 builder.Services.AddOpenApi();
 builder.Services.AddEmsLogic(builder.Configuration);
 builder.Services.AddApplication(builder.Configuration);
 builder.Services.AddInfrastructure(builder.Configuration);
-
 
 // 🔹 Authentication (JWT)
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -53,16 +54,16 @@ var app = builder.Build();
 
 #region Middleware pipeline
 
+app.UseSwagger();
+app.UseSwaggerUI();
 
-app.MapOpenApi();
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.UseSwagger();
-app.UseSwaggerUI();
 app.MapControllers();
+
 
 #endregion
 

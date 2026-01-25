@@ -889,23 +889,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rubin.m\\.nuget\\packages\\": {},
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Application\\EMS.Application.csproj",
+      "projectUniqueName": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Application\\EMS.Application.csproj",
       "projectName": "EMS.Application",
-      "projectPath": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Application\\EMS.Application.csproj",
-      "packagesPath": "C:\\Users\\rubin.m\\.nuget\\packages\\",
-      "outputPath": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Application\\obj\\",
+      "projectPath": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Application\\EMS.Application.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\rubin.m\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -914,16 +914,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "F:\\Projects\\MRF_TCR\\Cantier.MesX\\Cantier.TcrApplication\\bin\\Release\\net9.0\\publish": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Domain\\EMS.Domain.csproj": {
-              "projectPath": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Domain\\EMS.Domain.csproj"
+            "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Domain\\EMS.Domain.csproj": {
+              "projectPath": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Domain\\EMS.Domain.csproj"
             }
           }
         }

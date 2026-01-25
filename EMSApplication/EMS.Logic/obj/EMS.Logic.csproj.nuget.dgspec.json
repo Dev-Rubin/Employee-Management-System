@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Logic\\EMS.Logic.csproj": {}
+    "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Logic\\EMS.Logic.csproj": {}
   },
   "projects": {
-    "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Application\\EMS.Application.csproj": {
+    "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Application\\EMS.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Application\\EMS.Application.csproj",
+        "projectUniqueName": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Application\\EMS.Application.csproj",
         "projectName": "EMS.Application",
-        "projectPath": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Application\\EMS.Application.csproj",
-        "packagesPath": "C:\\Users\\rubin.m\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Application\\obj\\",
+        "projectPath": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Application\\EMS.Application.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\rubin.m\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,16 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "F:\\Projects\\MRF_TCR\\Cantier.MesX\\Cantier.TcrApplication\\bin\\Release\\net9.0\\publish": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Domain\\EMS.Domain.csproj": {
-                "projectPath": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Domain\\EMS.Domain.csproj"
+              "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Domain\\EMS.Domain.csproj": {
+                "projectPath": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Domain\\EMS.Domain.csproj"
               }
             }
           }
@@ -363,20 +361,20 @@
         }
       }
     },
-    "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Domain\\EMS.Domain.csproj": {
+    "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Domain\\EMS.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Domain\\EMS.Domain.csproj",
+        "projectUniqueName": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Domain\\EMS.Domain.csproj",
         "projectName": "EMS.Domain",
-        "projectPath": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Domain\\EMS.Domain.csproj",
-        "packagesPath": "C:\\Users\\rubin.m\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Domain\\obj\\",
+        "projectPath": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Domain\\EMS.Domain.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\rubin.m\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -385,8 +383,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "F:\\Projects\\MRF_TCR\\Cantier.MesX\\Cantier.TcrApplication\\bin\\Release\\net9.0\\publish": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -704,20 +700,20 @@
         }
       }
     },
-    "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Infrastructure\\EMS.Infrastructure.csproj": {
+    "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Infrastructure\\EMS.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Infrastructure\\EMS.Infrastructure.csproj",
+        "projectUniqueName": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Infrastructure\\EMS.Infrastructure.csproj",
         "projectName": "EMS.Infrastructure",
-        "projectPath": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Infrastructure\\EMS.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\rubin.m\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Infrastructure\\obj\\",
+        "projectPath": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Infrastructure\\EMS.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\rubin.m\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -726,16 +722,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "F:\\Projects\\MRF_TCR\\Cantier.MesX\\Cantier.TcrApplication\\bin\\Release\\net9.0\\publish": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Application\\EMS.Application.csproj": {
-                "projectPath": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Application\\EMS.Application.csproj"
+              "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Application\\EMS.Application.csproj": {
+                "projectPath": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Application\\EMS.Application.csproj"
               }
             }
           }
@@ -1077,20 +1071,20 @@
         }
       }
     },
-    "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Logic\\EMS.Logic.csproj": {
+    "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Logic\\EMS.Logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Logic\\EMS.Logic.csproj",
+        "projectUniqueName": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Logic\\EMS.Logic.csproj",
         "projectName": "EMS.Logic",
-        "projectPath": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Logic\\EMS.Logic.csproj",
-        "packagesPath": "C:\\Users\\rubin.m\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Logic\\obj\\",
+        "projectPath": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Logic\\EMS.Logic.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Logic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\rubin.m\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1099,22 +1093,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "F:\\Projects\\MRF_TCR\\Cantier.MesX\\Cantier.TcrApplication\\bin\\Release\\net9.0\\publish": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Application\\EMS.Application.csproj": {
-                "projectPath": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Application\\EMS.Application.csproj"
+              "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Application\\EMS.Application.csproj": {
+                "projectPath": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Application\\EMS.Application.csproj"
               },
-              "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Domain\\EMS.Domain.csproj": {
-                "projectPath": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Domain\\EMS.Domain.csproj"
+              "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Domain\\EMS.Domain.csproj": {
+                "projectPath": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Domain\\EMS.Domain.csproj"
               },
-              "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Infrastructure\\EMS.Infrastructure.csproj": {
-                "projectPath": "F:\\Projects\\Employee-Management-System\\EMSApplication\\EMS.Infrastructure\\EMS.Infrastructure.csproj"
+              "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Infrastructure\\EMS.Infrastructure.csproj": {
+                "projectPath": "F:\\Development\\DotNet\\Employee-Management-System\\Employee-Management-System\\EMSApplication\\EMS.Infrastructure\\EMS.Infrastructure.csproj"
               }
             }
           }

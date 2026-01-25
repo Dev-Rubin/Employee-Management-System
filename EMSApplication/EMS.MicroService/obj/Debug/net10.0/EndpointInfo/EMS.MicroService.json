@@ -1,17 +1,9 @@
 {
-  "openapi": "3.1.1",
+  "openapi": "3.0.4",
   "info": {
-    "title": "EMS.MicroService | v1",
-    "version": "1.0.0"
+    "title": "EMS.MicroService",
+    "version": "1.0"
   },
-  "servers": [
-    {
-      "url": "https://localhost:7129"
-    },
-    {
-      "url": "http://localhost:5264"
-    }
-  ],
   "paths": {
     "/api/auth/register": {
       "post": {
@@ -35,8 +27,7 @@
                 "$ref": "#/components/schemas/RegisterUserCommand"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -67,8 +58,7 @@
                 "$ref": "#/components/schemas/LoginCommand"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -99,8 +89,7 @@
                 "$ref": "#/components/schemas/RefreshTokenCommand"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -113,56 +102,57 @@
   "components": {
     "schemas": {
       "LoginCommand": {
-        "required": [
-          "userName",
-          "password"
-        ],
         "type": "object",
         "properties": {
           "userName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "password": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       },
       "RefreshTokenCommand": {
-        "required": [
-          "refreshToken"
-        ],
         "type": "object",
         "properties": {
           "refreshToken": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       },
       "RegisterUserCommand": {
-        "required": [
-          "userName",
-          "email",
-          "password"
-        ],
         "type": "object",
         "properties": {
           "userName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "email": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "password": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "userRole": {
             "$ref": "#/components/schemas/UserRole"
           }
-        }
+        },
+        "additionalProperties": false
       },
       "UserRole": {
+        "enum": [
+          0,
+          1
+        ],
         "type": "integer",
-        "default": 1
+        "format": "int32"
       }
     }
   },

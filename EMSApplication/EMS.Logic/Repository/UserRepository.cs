@@ -1,11 +1,13 @@
 ﻿using EMS.Application.IRepository;
 using EMS.Domain.Entities;
 using EMS.Infrastructure.Persistence;
+using EMS.Infrastructure.Persistence.Interface;
+using EMS.Infrastructure.Persistence.Service;
 using Microsoft.EntityFrameworkCore;
 
 namespace EMS.Logic.Repository
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository : BasicCrudService<User, int >, IUserRepository
     {
         private readonly AppDbContext _context;
 
