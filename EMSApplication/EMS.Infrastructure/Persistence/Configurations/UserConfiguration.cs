@@ -8,7 +8,7 @@ namespace EMS.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.ToTable("MasterData", "Users");
+            builder.ToTable("Users", "MasterData");
 
             builder.HasKey(x => x.Id);
 

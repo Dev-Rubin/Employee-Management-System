@@ -8,7 +8,7 @@ namespace EMS.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<RefreshToken> builder)
         {
-            builder.ToTable("Auth","RefreshTokens");
+            builder.ToTable("RefreshTokens", "Auth");
 
             builder.HasKey(x => x.Id);
 
