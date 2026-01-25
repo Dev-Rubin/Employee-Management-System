@@ -11,6 +11,7 @@ namespace EMS.Infrastructure.Persistence.Interface
         public IDbConnection Connection { get; }
         public DbSet<User> Users => Set<User>();
         public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
+        public DbSet<ExceptionLog> ExceptionLogs => Set<ExceptionLog>();
         DatabaseFacade Database { get; }
         EntityEntry Entry(object entity);
         DbSet<TEntity> Set<TEntity>() where TEntity : class;

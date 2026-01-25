@@ -28,7 +28,7 @@ namespace EMS.Infrastructure.Migrations
                     Email = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PasswordSalt = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Role = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Role = table.Column<int>(type: "int", nullable: false),
                     IsActive = table.Column<bool>(type: "bit", nullable: false),
                     AddedByUserId = table.Column<int>(type: "int", nullable: true),
                     AddedDate = table.Column<DateTime>(type: "datetime2", nullable: true),

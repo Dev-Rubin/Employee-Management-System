@@ -5,12 +5,15 @@ using MediatR;
 
 namespace EMS.Application.Handler.Auth
 {
-    public class RefreshTokenCommandHandler
-        : IRequestHandler<RefreshTokenCommand, LoginResponse>
+    public class RefreshTokenCommandHandler : IRequestHandler<RefreshTokenCommand, LoginResponse>
     {
         private readonly IUserRepository _userRepo;
         private readonly IJwtTokenGenerator _tokenGenerator;
-
+        public RefreshTokenCommandHandler(IUserRepository userRepo, IJwtTokenGenerator tokenGenerator)
+        {
+            _userRepo = userRepo;
+            _tokenGenerator = tokenGenerator;
+        }
         public async Task<LoginResponse> Handle(RefreshTokenCommand request, CancellationToken cancellationToken)
         {
             var user = await _userRepo.GetByRefreshTokenAsync(request.RefreshToken);
@@ -18,11 +21,11 @@ namespace EMS.Application.Handler.Auth
             if (user == null)
                 throw new UnauthorizedAccessException();
 
-            var token = _tokenGenerator.Generate(user);
+            var token = await _tokenGenerator.Generate(user);
 
             return new LoginResponse(
-                token,
-                DateTime.UtcNow.AddHours(1)
+                token.Token,
+                token.ExpiresAt
             );
         }
     }

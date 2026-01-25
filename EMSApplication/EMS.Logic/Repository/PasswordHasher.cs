@@ -1,5 +1,6 @@
 ﻿using EMS.Application.IRepository;
 using EMS.Domain.Entities;
+using EMS.Infrastructure.Persistence.Interface;
 using EMS.Infrastructure.Persistence.Service;
 using System.Security.Cryptography;
 using System.Text;
@@ -8,6 +9,10 @@ namespace EMS.Logic.Repository
 {
     public class PasswordHasher : BasicCrudService<User, int>, IPasswordHasher
     {
+        public PasswordHasher(IUnitOfWork unitOfWork, IRepository repository, IQueries queries) : base(unitOfWork, repository, queries)
+        {
+            
+        }
         public bool Verify(string password, string hash, string salt)
         {
             using var hmac = new HMACSHA512(Convert.FromBase64String(salt));

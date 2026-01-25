@@ -3,6 +3,7 @@ using EMS.Domain.Entities.Common;
 using EMS.Infrastructure.Persistence.Configurations;
 using EMS.Infrastructure.Persistence.Interface;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Data;
 
 namespace EMS.Infrastructure.Persistence
@@ -47,6 +48,7 @@ namespace EMS.Infrastructure.Persistence
         public IDbConnection Connection => Database.GetDbConnection();
         public DbSet<User> Users => Set<User>();
         public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
+        public DbSet<ExceptionLog> ExceptionLogs => Set<ExceptionLog>();
 
     }
 }

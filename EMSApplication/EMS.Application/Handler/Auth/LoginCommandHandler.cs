@@ -35,11 +35,11 @@ public class LoginCommandHandler : IRequestHandler<LoginCommand, LoginResponse>
         if (!isValid)
             throw new UnauthorizedAccessException("Invalid credentials");
 
-        var token = _tokenGenerator.Generate(user);
+        var token = await _tokenGenerator.Generate(user);
 
         return new LoginResponse(
-            token,
-            DateTime.UtcNow.AddHours(1)
+            token.Token,
+            token.ExpiresAt
         );
     }
 }
@@ -82,11 +82,11 @@ namespace EMS.Application.Handler.Auth
             if (!isValid)
                 throw new UnauthorizedAccessException("Invalid credentials");
 
-            var token = _tokenGenerator.Generate(user);
+            var token = await _tokenGenerator.Generate(user);
 
             return new LoginResponse(
-                token,
-                DateTime.UtcNow.AddHours(1)
+                token.Token,
+                token.ExpiresAt
             );
         }
     }

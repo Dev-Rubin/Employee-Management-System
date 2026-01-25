@@ -22,9 +22,6 @@ namespace EMS.Infrastructure.Persistence.Configurations
 
             builder.HasIndex(x => x.UserName)
                 .IsUnique();
-
-            builder.Property(x => x.Role)
-                .HasConversion<string>();
         }
     }
 }

@@ -12,11 +12,11 @@ namespace EMS.Domain.Entities
 
         private RefreshToken() { }
 
-        public RefreshToken(int userId, TimeSpan lifetime)
+        public RefreshToken(int userId, string token, DateTime expires)
         {
-            Token = Guid.NewGuid().ToString("N");
+            Token = token;
             UserId = userId;
-            ExpiresAt = DateTime.UtcNow.Add(lifetime);
+            ExpiresAt = expires;
         }
 
         public void Revoke(string? modifiedBy = null)
@@ -24,8 +24,7 @@ namespace EMS.Domain.Entities
             IsRevoked = true;
         }
 
-        public bool IsValid()
-            => !IsRevoked && DateTime.UtcNow <= ExpiresAt;
+        public bool IsValid() => !IsRevoked && DateTime.UtcNow <= ExpiresAt;
     }
 
 }

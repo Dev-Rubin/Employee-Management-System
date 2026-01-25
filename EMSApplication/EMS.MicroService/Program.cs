@@ -1,14 +1,21 @@
-﻿using EMS.Infrastructure;
-using EMS.Application;
+﻿using EMS.Application;
+using EMS.Infrastructure;
 using EMS.Logic;
+using EMS.MicroService.Middlewares;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Serilog;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-#region Services
+// Read configuration from appsettings.json
+builder.Host.UseSerilog((ctx, lc) => lc
+    .ReadFrom.Configuration(ctx.Configuration)
+    .Enrich.FromLogContext()
+);
 
+#region Services
 // Controllers
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -16,8 +23,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddEmsLogic(builder.Configuration);
 builder.Services.AddApplication(builder.Configuration);
 builder.Services.AddInfrastructure(builder.Configuration);
-
-// 🔹 Authentication (JWT)
+#endregion
+// Authentication (JWT)
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -47,7 +54,6 @@ builder.Services.AddAuthorization(options =>
         policy.RequireClaim("IsActive", "True"));
 });
 
-#endregion
 
 var app = builder.Build();
 await app.ApplyPendingMigrationsAsync();
@@ -57,6 +63,9 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
+
+app.UseRouting();
+app.UseMiddleware<GlobalExceptionMiddleware>();
 
 app.UseAuthentication();
 app.UseAuthorization();

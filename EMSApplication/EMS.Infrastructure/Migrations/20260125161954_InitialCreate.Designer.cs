@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EMS.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260125161002_InitialCreate")]
+    [Migration("20260125161954_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -98,9 +98,8 @@ namespace EMS.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Role")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Role")
+                        .HasColumnType("int");
 
                     b.Property<int?>("UpdatedByUserId")
                         .HasColumnType("int");

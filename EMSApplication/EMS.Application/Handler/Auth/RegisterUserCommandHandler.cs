@@ -5,23 +5,17 @@ using MediatR;
 
 namespace EMS.Application.Handler.Auth
 {
-    public class RegisterUserCommandHandler
-        : IRequestHandler<RegisterUserCommand, int>
+    public class RegisterUserCommandHandler : IRequestHandler<RegisterUserCommand, int>
     {
         private readonly IUserRepository _repo;
         private readonly IPasswordHasher _hasher;
-
-        public RegisterUserCommandHandler(
-            IUserRepository repo,
-            IPasswordHasher hasher)
+        public RegisterUserCommandHandler(IUserRepository repo, IPasswordHasher hasher)
         {
             _repo = repo;
             _hasher = hasher;
         }
 
-        public async Task<int> Handle(
-            RegisterUserCommand request,
-            CancellationToken cancellationToken)
+        public async Task<int> Handle(RegisterUserCommand request, CancellationToken cancellationToken)
         {
             _hasher.CreatePasswordHash( request.Password, out string hash, out string salt);
 

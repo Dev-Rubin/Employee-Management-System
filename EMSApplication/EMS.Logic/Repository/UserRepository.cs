@@ -11,7 +11,7 @@ namespace EMS.Logic.Repository
     {
         private readonly AppDbContext _context;
 
-        public UserRepository(AppDbContext context)
+        public UserRepository(AppDbContext context, IUnitOfWork unitOfWork, IRepository repository, IQueries queries) : base(unitOfWork, repository, queries)
         {
             _context = context;
         }
