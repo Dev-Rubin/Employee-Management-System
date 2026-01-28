@@ -18,10 +18,7 @@ namespace EMS.Infrastructure.Persistence.Service
         protected internal virtual IQueries Queries { get; set; }
 
         private TransactionChain _transactionChain;
-        protected CrudService(
-            IUnitOfWork unitOfWork,
-            IRepository repository,
-            IQueries queries)
+        protected CrudService(IUnitOfWork unitOfWork, IRepository repository, IQueries queries)
         {
             UnitOfWork = unitOfWork;
             Repository = repository;

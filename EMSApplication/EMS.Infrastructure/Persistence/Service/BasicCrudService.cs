@@ -1,25 +1,12 @@
 ﻿using EMS.Domain.Entities.Common;
 using EMS.Infrastructure.Common;
 using EMS.Infrastructure.Persistence.Interface;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace EMS.Infrastructure.Persistence.Service
 {
-    public abstract class BasicCrudService<T, TId> : CrudService, IBasicCrudService<T, TId>
-        where T : BaseEntity<TId>
+    public abstract class BasicCrudService<T, TId> : CrudService, IBasicCrudService<T, TId>  where T : BaseEntity<TId>
     {
-        protected BasicCrudService()
-            : base(null, null, null)
-        {
-            OnInit();
-        }
-        protected BasicCrudService(
-            IUnitOfWork unitOfWork,
-            IRepository repository,
-            IQueries queries)
-            : base(unitOfWork, repository, queries)
+        protected BasicCrudService(IUnitOfWork unitOfWork, IRepository repository, IQueries queries) : base(unitOfWork, repository, queries)
         {
             OnInit();
         }

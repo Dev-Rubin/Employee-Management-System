@@ -8,15 +8,22 @@ namespace EMS.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<RefreshToken> builder)
         {
-            builder.ToTable("RefreshTokens", "Auth");
-
             builder.HasKey(x => x.Id);
 
             builder.Property(x => x.Token)
-                .IsRequired();
+                   .HasColumnType("nvarchar(max)")
+                   .IsRequired();
 
-            builder.HasIndex(x => x.Token)
-                .IsUnique();
+            builder.Property(x => x.TokenHash)
+                   .HasMaxLength(64)
+                   .IsRequired();
+
+            builder.HasIndex(x => x.TokenHash)
+                   .IsUnique();
+
+            builder.HasOne(x => x.User)
+                   .WithMany()
+                   .HasForeignKey(x => x.UserId);
         }
     }
 

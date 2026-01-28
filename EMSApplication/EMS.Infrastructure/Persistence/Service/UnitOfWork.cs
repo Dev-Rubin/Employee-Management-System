@@ -19,17 +19,7 @@ namespace EMS.Infrastructure.Persistence.Service
         private string _errorMessage = string.Empty;
         private bool _disposed;
 
-
-        public UnitOfWork()
-        {
-
-        }
-
-        public UnitOfWork(
-            IAppDbContext appDbContext,
-            IAppReadDbConnection appDbRead,
-            IAppWriteDbConnection appWriteDb,
-            IMapper mapper)
+        public UnitOfWork(IAppDbContext appDbContext, IAppReadDbConnection appDbRead, IAppWriteDbConnection appWriteDb, IMapper mapper)
         {
             _appDbContext = appDbContext;
             _appDbRead = appDbRead;
@@ -125,14 +115,14 @@ namespace EMS.Infrastructure.Persistence.Service
                 }
                 else
                 {
-                    return new FailedTransaction("");
+                    return new FailedTransaction("dbContextTransaction is null");
                 }
                 return new SuccessfulTransaction("");
             }
             catch (DbUpdateException ex) when (ex.InnerException?.Message.Contains(" Truncated value") == true)
             {
                 await _dbContextTransaction.RollbackAsync(cancellationToken).ConfigureAwait(false);
-                return new FailedTransaction("");
+                return new FailedTransaction($"{ex.Message}{ex.InnerException?.Message}");
 
             }
             catch (Exception ex)

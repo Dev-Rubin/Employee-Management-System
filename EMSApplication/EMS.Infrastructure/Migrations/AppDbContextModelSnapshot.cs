@@ -76,7 +76,12 @@ namespace EMS.Infrastructure.Migrations
 
                     b.Property<string>("Token")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TokenHash")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
 
                     b.Property<int?>("UpdatedByUserId")
                         .HasColumnType("int");
@@ -89,12 +94,12 @@ namespace EMS.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Token")
+                    b.HasIndex("TokenHash")
                         .IsUnique();
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("RefreshTokens", "Auth");
+                    b.ToTable("RefreshTokens");
                 });
 
             modelBuilder.Entity("EMS.Domain.Entities.User", b =>

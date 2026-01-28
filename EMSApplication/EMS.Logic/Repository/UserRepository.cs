@@ -4,6 +4,8 @@ using EMS.Infrastructure.Persistence;
 using EMS.Infrastructure.Persistence.Interface;
 using EMS.Infrastructure.Persistence.Service;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace EMS.Logic.Repository
 {
@@ -28,12 +30,18 @@ namespace EMS.Logic.Repository
             await _context.SaveChangesAsync();
         }
 
-        public async Task<User?> GetByRefreshTokenAsync(string token)
+        public async Task<User?> GetByRefreshTokenAsync(string refreshToken)
         {
+
+            var hash = Convert.ToHexString(
+                SHA256.HashData(Encoding.UTF8.GetBytes(refreshToken))
+            );
+
             return await _context.RefreshTokens
-                .Where(x => x.Token == token && !x.IsRevoked)
+                .Where(x => x.TokenHash == hash && !x.IsValid())
                 .Select(x => x.User)
                 .FirstOrDefaultAsync();
         }
+
     }
 }
