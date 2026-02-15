@@ -5,6 +5,7 @@ using EMS.MicroService.Middlewares;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 using Microsoft.IdentityModel.Tokens;
+using Scalar.AspNetCore;
 using Serilog;
 using System.Text;
 
@@ -23,7 +24,7 @@ builder.Host.UseSerilog((ctx, lc) => lc
 // Add Controllers
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddOpenApi();
 // HTTP Context Accessor
 builder.Services.AddHttpContextAccessor();
 // AutoMapper
@@ -55,12 +56,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
-// Authorization policies
-builder.Services.AddAuthorization(options =>
-{
-    options.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"));
-    options.AddPolicy("ActiveUser", policy => policy.RequireClaim("IsActive", "True"));
-});
 
 #endregion
 
@@ -75,9 +70,12 @@ await app.ApplyPendingMigrationsAsync();
 
 
 #region Middleware Pipeline
+if (app.Environment.IsDevelopment())
+{
+    app.MapOpenApi();           // /openapi/v1.json
+    app.MapScalarApiReference(); // /scalar
+}
 
-app.UseSwagger();
-app.UseSwaggerUI();
 
 // HTTPS redirection
 app.UseHttpsRedirection();
