@@ -20,7 +20,7 @@
 1. Configure JWT settings in appsettings.json
 2. Apply database migrations
 3. Run the API
-4. Use Postman / Swagger to test
+4. Use Postman / Scalar to test
 
 ## Security
 - Password hashing + salting
